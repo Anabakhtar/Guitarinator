@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Guitarinator</title>
+  <link rel="stylesheet" href="https://unpkg.com/carbon-components@latest/css/carbon-components.css" />
+  <link rel="stylesheet" href="track.css">
+</head>
+<body style="background-color:powderblue;"></body>
+<style>
+.content {
+  max-width: 1150px;
+  margin: auto;
+}
+</style>
+
+<body>
+
+<div class="content">
+	<body class="bx--body p20">
+		<body>
+		    <div style="width:200px; margin:0 auto;">
+		        <div class="mb10">
+		          <button onclick="toggleVideo()" id="trackbutton" class="bx--btn bx--btn--secondary" type="button">
+		            	Start Jamming !
+		          </button>
+		        <p>   </p>
+
+
+		        <div id="updatenote" class="updatenote mt10" >pls wait</div>
+		        </div>
+		    </div>
+		</body>
+
+	  
+	    
+	  <video class="videobox canvasbox" autoplay="autoplay" id="myvideo" hidden="myvideo"></video>
+
+	  <canvas id="canvas" class="border canvasbox"></canvas>
+	  
+
+	  <script src="https://unpkg.com/carbon-components@latest/scripts/carbon-components.js"></script>
+	  <script src="https://cdn.jsdelivr.net/npm/handtrackjs/dist/handtrack.min.js"> </script>
+	  <script src="track.js"></script>
+	</body>
+
+</div>
+
+</body>
+
+</html>
